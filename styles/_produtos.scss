@@ -1,0 +1,132 @@
+// -------------------------------------------------------------------------------------------
+// ------------------------------------ PRODUTOS PAGE ------------------------------
+// -------------------------------------------------------------------------------------------
+#main-products {
+  h1 {
+    text-align: center;
+    // border: 2px solid green;
+    font-size: 4rem;
+    color: $main-color;
+    margin-top: 2rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    //  border: 2px solid yellow;
+  }
+
+  .wrap-produtos {
+    // border: 2px solid red;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .item-produto {
+      // border: 2px solid blue;
+      width: 40%;
+      height: 20rem;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #produto-1 {
+      background-image: url("../images/empresa-1.png");
+    }
+
+    #produto-2 {
+      background-image: url("../images/empresa-1.png");
+    }
+
+    #produto-3 {
+      background-image: url("../images/empresa-1.png");
+    }
+
+    #produto-4 {
+      background-image: url("../images/empresa-1.png");
+    }
+
+    .text-block {
+      color: white;
+      background: $main-color;
+      width: 100%;
+      height: 5rem;
+      opacity: 0.9;
+      text-align: center;
+      text-decoration: none;
+
+      h4 {
+        margin-top: 5%;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+// ------------------------------------ PRODUTOS PAGE MEDIA QUERIES ------------------------------
+
+@media screen and (max-width: 1250px) {
+  #main-products {
+
+    .wrap-produtos {
+
+      .item-produto {
+        width: 20rem;
+        height: 18rem;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #main-products {
+    
+    h1 {
+      font-size: 3rem;
+      background-color: $main-color;
+      color: #fff;
+      padding: 3rem 0;
+    }
+    .wrap-produtos {
+
+      .item-produto {
+        width: 70%;
+        height: 20rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-products {
+    
+    h1 {
+      font-size: 2rem;
+    }
+
+    .wrap-produtos {
+
+      .item-produto {
+        width: 90%;
+        height: 12rem;
+      }
+
+      .text-block {
+  
+        h4 {
+          margin-top: 1.5rem;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+    
+  }
+}

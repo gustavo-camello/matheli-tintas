@@ -1,0 +1,157 @@
+// ---------------------------------------------- FOOTER SECTION ---------------------------------------------
+#footer {
+  background-color: $main-color;
+  color: #fff;
+  padding-bottom: 1.5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-information {
+  width: 40%;
+  text-align: center;
+  // border: 2px solid green;
+
+  span {
+    font-size: 1.7vw;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1vw;
+  }
+}
+
+.hours {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.5vw;
+  }
+}
+
+.logo-footer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid pink;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+
+  img {
+    width: 70%;
+  }
+}
+
+.social-media {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //  border: 2px solid red;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  i {
+    font-size: 2vw;
+    margin: 1rem;
+  }
+}
+
+#address {
+  text-align: center;
+  font-size: 1vw;
+}
+
+
+// -------------------------------------------------------------------------------------------
+// ------------------------------------ MEDIA QUERIES ------------------------------
+// -------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 700px) {
+  #footer {
+    .footer-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 0 0 0;
+    }
+  }
+
+  .contact-information {
+    width: 100%;
+    // border: 2px solid green;
+
+    span {
+      font-size: 3.5vw;
+      font-weight: bold;
+      letter-spacing: 0.5rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 3.5vw;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .hours {
+    margin-top: 1rem;
+
+    h2 {
+      font-size: 3.5vw;
+      margin-bottom: 0;
+      letter-spacing: 0.2rem;
+    }
+
+    p {
+      font-size: 2.5vw;
+    }
+  }
+
+  .logo-footer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    // border: 2px solid pink;
+    img {
+      width: 100%;
+    }
+  }
+
+  .social-media {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    // border: 2px solid red;
+
+    i {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+  }
+
+  #address {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,87 @@
+// -------------------------------------------------------------------------------------------
+// ------------------------------------ ESMALTE PU PAGE ------------------------------
+// -------------------------------------------------------------------------------------------
+
+#esmalte-pu {
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    text-align: center;
+    // border: 2px solid green;
+    font-size: 4rem;
+    color: $main-color;
+    padding: 3rem;
+  }
+
+  .wrap-product {
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-around;
+    color: $main-color;
+    font-family: $font;
+
+    h2 {
+      margin: 1rem 0 0.5rem 0;
+    }
+  }
+
+  .wrap-image {
+    border: 2px solid pink;
+    width: 25rem;
+    height: 25rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .product-description {
+    border: 2px solid red;
+    padding-top: 2rem;
+    width: 40%;
+  }
+
+  .product-more-info {
+    border: 2px solid red;
+    margin: 3rem 0;
+    color: $main-color;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .info-1 {
+      border: 2px solid green;
+      width: 25%;
+    }
+
+    .info-2 {
+      border: 2px solid yellow;
+      width: 30%;
+    }
+
+    .info-3 {
+      
+      width: 30%;
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+// -------------------------------------------------------------------------------------------
+// ------------------------------------ EMPRESA PAGE ------------------------------
+// -------------------------------------------------------------------------------------------
+
+#about-company {
+  color: #393665;
+
+  h1 {
+    text-align: center;
+    // border: 2px solid green;
+    font-size: 4rem;
+    color: $main-color;
+    margin: 2rem 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    //  border: 2px solid yellow;
+  }
+
+  .mission-values {
+    margin: 3rem 0;
+    p {
+      text-align: left;
+    }
+
+    .wrap-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //  border: 2px solid red;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .mission-vision {
+        // border: 2px solid blue;
+        min-width: 50%;
+        padding: 1rem;
+
+        .mission {
+          border-top: 3px solid $main-color;
+          border-bottom: 3px solid $main-color;
+          -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          padding: 0.5rem;
+        }
+
+        .vision {
+          border-top: 3px solid $main-color;
+          border-bottom: 3px solid $main-color;
+          -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          padding: 0.5rem;
+          margin-top: 3rem;
+        }
+
+      }
+
+      .values {
+        //  border: 2px solid pink;
+        min-width: 50%;
+        border-top: 3px solid #fff;
+        margin-left: 4rem;
+        padding: 1rem;
+        background-color: $main-color;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+        ul {
+          list-style: none;
+          margin-top: 1rem;
+        }
+
+        li {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .pictures {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    // border: 2px solid blue;
+    margin-bottom: 5rem;
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+// ------------------------------------ EMPRESA PAGE MEDIA QUERIES ------------------------------
+
+@media screen and (max-width: 1250px) {
+}
+
+@media screen and (max-width: 850px) {
+  #about-company {
+    h1 {
+      font-size: 3rem;
+      background-color: $main-color;
+      color: #fff;
+      padding: 3rem 0;
+    }
+  }
+  .mission-values {
+    h2 {
+      font-size: 1rem;
+    }
+
+    .wrap-container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .values {
+        margin-left: 0!important;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about-company {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .mission-values {
+      .wrap-container {
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .pictures {
+      flex-direction: column;
+
+      img {
+        width: 70%;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+
+}
